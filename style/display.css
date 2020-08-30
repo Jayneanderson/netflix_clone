@@ -1,0 +1,153 @@
+:root{/* uso de variáveis */
+    --branca: ##ffff;
+    --preta: #141414;
+}
+*{/* Se refere a todo documento */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* elementos tenha exatamente o tamanho definido. N há ropimento de caixa */
+}
+
+/* elemento base */
+body {
+    font-family: 'Arial', Times, serif;
+    background-color: var(--preta);
+    color: white;
+}
+ 
+header .container {
+    display: flex; /* toda vez que você usa essa propriedade ele tende a jogar tudo em linha */
+    flex-direction: row;
+    align-items: center; /* alinha de forma vertical */
+    justify-content: space-between; /* cria um espaço entre a tag he e a tag nav */
+    margin-right: 50px;
+}
+
+
+header .logo{
+    margin-left: 5px;
+    color: var(--branca);
+    font-family: 'Arial Black', Times;
+    font-size: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #ffff;
+}
+
+/* linguagem principal */
+.linguagem-principal {
+    font-size: 15px;
+    background: url('/img/img-edited/capa1_opt.png');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+.linguagem-principal .descricao {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.linguagem-principal .titulo{
+    margin-top: 17%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.linguagem-principal .botao {
+    background-color: rgba(0, 0, 0, 50%); /* Serve para colocar efeito de transparencia. O último é a camada alfa */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;  /* indica que o local é clicável */
+    /* border-bottom: 1px solid white; */
+    transition: .3s ease all; /* cuida da transição entre uma animação e outra */
+}
+
+.linguagem-principal .botao:hover{
+    color: black;
+    background-color: white;
+}
+
+.botao i {
+    margin-right:8px;
+}
+.container {
+    margin-left: 20px;
+}
+
+.linguagem-principal .container {
+    width: 70%;
+}
+
+.box-linguagem {
+    height: 70%;
+    width: 70%;
+    display: block;
+
+}
+
+.item{
+    display: block;
+
+    background-size: cover;
+}
+
+/* Parte do Menu */
+
+nav {
+    list-style-type: none;
+    
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+.menu li ul {
+    position: absolute;
+    padding-top: 5px;
+    display: none;
+}
+
+.menu li ul li a {
+    width: 100px;
+    margin-top: -1px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li a {
+    width: 100px;
+    padding-top: 10px;
+}
+

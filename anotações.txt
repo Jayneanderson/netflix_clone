@@ -1,0 +1,20 @@
+Algumas propriedades virão com um defalut, mesmo que você não defina. 
+Um exemplo disso é o button
+
+Font Awesome (fonte alsome)
+É um script que permite incorporar na pag html
+para poder usar ícones apenas com referencia
+
+Classes Weapper (Envelopar)
+
+No nosso código, está chamado de container. 
+
+A ideia da nossa classe container é envelopar tudo que há dentro dela. 
+
+Owl Carousel 2
+
+Serve para facilitar a construção do carousel com jQuery
+
+MediaQuery
+
+Trata o tamanho da tela do seu site. Ou seja, vc pode aplciar estilos de acordo com po tamanho da tela.
